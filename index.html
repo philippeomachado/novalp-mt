@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PH Machado Vídeo Pack – Assinatura de Vídeos</title>
+
+<!-- ======  CORES & TIPOGRAFIA  ====== -->
+<style>
+:root{
+  --primary:#018781;          /* verde-petróleo                   */
+  --primary-light:#02a297;
+  --highlight:#e03627;        /* laranja-vermelho (destaques)     */
+  --secondary:#e99127;        /* dourado (preços / detalhes)      */
+  --text:#212121;
+  --bg:#ffffff;
+  --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --radius:8px;
+  --wrap:800px;               /* largura máxima dos blocos        */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.6}
+
+/* ---- Elementos base ---- */
+section{padding:96px 24px;margin:auto;max-width:var(--wrap)}
+h1{font-size:3rem;line-height:1.2;margin-bottom:24px;color:var(--primary)}
+h2{font-size:2rem;line-height:1.3;margin-bottom:24px;color:var(--primary)}
+h3{font-size:1.25rem;margin-bottom:12px;color:var(--primary)}
+a{color:var(--primary);text-decoration:none}
+.btn{display:inline-block;padding:14px 32px;border-radius:var(--radius);font-weight:600;transition:.2s}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-light)}
+
+/* ---- Header minimalista ---- */
+header{padding:24px 24px;display:flex;justify-content:center}
+header strong{color:var(--primary)}
+nav ul{display:flex;gap:32px;list-style:none;font-weight:600}
+nav li a:hover{color:var(--highlight)}
+@media(max-width:640px){nav ul{display:none}}
+
+/* ---- Hero ---- */
+#hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:40px}
+#hero img{max-width:600px;width:100%;border-radius:var(--radius)}
+
+/* ---- Vantagens ---- */
+#vantagens p{margin-bottom:16px}
+
+/* ---- Planos em texto corrido ---- */
+.planos{display:flex;flex-direction:column;gap:48px}
+.plan h3{font-size:1.5rem}
+.plan .price{color:var(--secondary);font-size:1.75rem;font-weight:700;margin:12px 0}
+
+/* ---- Vídeos ---- */
+.video-grid{display:flex;flex-direction:column;gap:48px}
+.video-wrapper{width:100%;padding-top:56.25%;position:relative;border-radius:var(--radius);overflow:hidden;margin-bottom:8px}
+video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+
+/* ---- Depoimentos ---- */
+.testimonial{margin-bottom:48px}
+.testimonial blockquote{font-size:1.05rem;margin-bottom:12px}
+.testimonial strong{color:var(--highlight)}
+.testimonial figcaption{font-weight:600;color:var(--primary)}
+
+/* ---- FAQ ---- */
+.faq-list details{margin-bottom:18px;border:1px solid #e0e0e0;border-radius:var(--radius);padding:14px;background:#fafafa}
+.faq-list summary{cursor:pointer;font-weight:600;color:var(--primary)}
+.faq-list p{margin-top:8px}
+.faq-list summary::marker{color:var(--highlight)}
+
+/* ---- Logos (mesmo carrossel) ---- */
+#clientes{padding:96px 0;text-align:center;background:#f7f9fa}
+#clientes h2{margin-bottom:48px}
+.logo-track{overflow:hidden}
+.logo-slide{display:flex;gap:64px;min-width:200%;animation:scroll 20s linear infinite}
+.logo-slide img{height:60px;filter:grayscale(100%);opacity:.8;transition:.3s}
+.logo-slide img:hover{filter:none;opacity:1}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:640px){.logo-slide{gap:32px;animation-duration:15s}}
+
+/* ---- CTA ---- */
+#cta{background:var(--primary);color:#fff;text-align:center;padding:96px 24px}
+#cta .btn-primary{background:#fff;color:var(--primary)}
+#cta .btn-primary:hover{background:#f0f0f0;color:var(--highlight)}
+
+/* ---- Footer ---- */
+footer{padding:32px 24px;text-align:center;font-size:.875rem;background:#01635e;color:#fff}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#"><strong>PH Machado</strong></a>
+    <ul>
+      <li><a href="#escopo">Escopo</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#videos">Vídeos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <h1>Assinatura de vídeos<br> sob medida<br> para a sua empresa</h1>
+  <p style="max-width:600px">Receba conteúdos profissionais de forma recorrente, previsível e sem dor de cabeça — do roteiro à entrega.</p>
+  <a href="https://wa.me/5532984611049" class="btn btn-primary">Quero conversar</a>
+  <img src="assinatura.jpg" alt="Making of da gravação">
+</section>
+
+<!-- VANTAGENS -->
+<section id="vantagens">
+  <h2>Conteúdo é a nossa especialidade</h2>
+  <p><strong>Consultoria audiovisual —</strong> reuniões de criação para alinhar objetivos, temas e storytelling.</p>
+  <p><strong>Previsibilidade de custos —</strong> mesma mensalidade durante todo o contrato, sem surpresas.</p>
+  <p><strong>Time completo —</strong> produtor, roteirista, câmera, edição, motion e sound design incluídos.</p>
+  <p><strong>Agilidade & escala —</strong> até 20 vídeos/mês prontos para múltiplas plataformas.</p>
+</section>
+
+<!-- ESCOPO -->
+<section id="escopo">
+  <h2>Escopo do Vídeo Pack</h2>
+  <p><strong>Inclui:</strong> reunião mensal de criação, roteirização, animação 2D, banco Envato (vídeos, trilhas, SFX), 2 rodadas de ajustes.</p>
+  <p><strong>Não inclui:</strong> captação (veja planos), animação 3D, locução, estúdio, trilha original, <em>animação de personagem</em>.</p>
+</section>
+
+<!-- PLANOS -->
+<section id="planos">
+  <h2>Níveis de captação</h2>
+
+  <div class="planos">
+
+    <div class="plan">
+      <h3>Básico — <span class="price">R$ 1.200/mês</span></h3>
+      <p>1 operador de câmera (Sony), tripé/estabilizador. <br>Até 8 vídeos de 60 s.</p>
+      <a href="https://wa.me/5532984611049?text=Olá!%20Pack%20Básico" class="btn btn-primary">Quero o Básico</a>
+    </div>
+
+    <div class="plan">
+      <h3>Intermediário — <span class="price">R$ 1.700/mês</span></h3>
+      <p>1 operador + 1 assistente, iluminação + captação de áudio. <br>Até 12 vídeos de 2 min.</p>
+      <a href="https://wa.me/5532984611049?text=Olá!%20Pack%20Intermediário" class="btn btn-primary">Quero o Intermediário</a>
+    </div>
+
+    <div class="plan">
+      <h3>Avançado — <span class="price">R$ 2.700/mês</span></h3>
+      <p>Equipe completa, teleprompter opcional. <br>Até 20 vídeos de 3 min.</p>
+      <a href="https://wa.me/5532984611049?text=Olá!%20Pack%20Avançado" class="btn btn-primary">Quero o Avançado</a>
+    </div>
+
+  </div>
+
+  <p style="margin-top:24px;font-size:.9rem">✚ Diária de drone: R$ 400,00 • Fidelidade mínima: 3 meses (10 % off no plano anual).</p>
+</section>
+
+<!-- VÍDEOS -->
+<section id="videos">
+  <h2>Exemplos de vídeos</h2>
+
+  <div class="video-grid">
+    <div>
+      <div class="video-wrapper">
+        <video src="videos/video1.mp4" controls playsinline preload="metadata"></video>
+      </div>
+      <p class="video-title">Vídeo institucional – Cliente A</p>
+    </div>
+
+    <div>
+      <div class="video-wrapper">
+        <video src="videos/video2.mp4" controls playsinline preload="metadata"></video>
+      </div>
+      <p class="video-title">Campanha de produto – Cliente B</p>
+    </div>
+
+    <div>
+      <div class="video-wrapper">
+        <video src="videos/video3.mp4" controls playsinline preload="metadata"></video>
+      </div>
+      <p class="video-title">Reel para redes sociais – Cliente C</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="testemunhos">
+  <h2>O que os clientes dizem</h2>
+
+  <figure class="testimonial">
+    <blockquote>Pessoa e profissional excepcional; escuta e entende o que o cliente precisa. <strong>Super indico!</strong></blockquote>
+    <figcaption>— Fabiano Alvares</figcaption>
+  </figure>
+
+  <figure class="testimonial">
+    <blockquote>Recomendo fortemente os serviços do PH. Atenção total às necessidades, aliando conhecimento, tecnologia e empatia.</blockquote>
+    <figcaption>— Fabiana Lopes da Cunha</figcaption>
+  </figure>
+
+  <figure class="testimonial">
+    <blockquote>Contratei para um vídeo institucional e agora toda a minha comunicação passa pela agência dele. <strong>Excelência!</strong></blockquote>
+    <figcaption>— Antônio Fernandes</figcaption>
+  </figure>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>Perguntas frequentes</h2>
+  <div class="faq-list">
+    <details><summary>Quantos vídeos recebo por mês?</summary><p>8, 12 ou 20 de acordo com o plano.</p></details>
+    <details><summary>Qual a duração de cada vídeo?</summary><p>60 s | 2 min | 3 min conforme o plano.</p></details>
+    <details><summary>Qual o prazo de entrega?</summary><p>Prévia em até 7 dias úteis; versão final em até 5 dias após aprovação.</p></details>
+    <details><summary>Posso cancelar antes de 3 meses?</summary><p>Sim, com multa de 50 % das mensalidades restantes.</p></details>
+  </div>
+</section>
+
+<!-- LOGOS -->
+<section id="clientes">
+  <h2>Algumas marcas que confiam no nosso trabalho</h2>
+  <div class="logo-track">
+    <div class="logo-slide">
+      <img src="logos/bianca.png" alt="Bianca Mudanças">
+      <img src="logos/ieep.png" alt="IEEP">
+      <img src="logos/bni.png" alt="BNI">
+      <img src="logos/otica.png" alt="Ótica & Ética">
+      <img src="logos/numberone.png" alt="Number One">
+      <img src="logos/igui.png" alt="iGUi">
+      <img src="logos/dynamo.png" alt="Dynamo">
+      <img src="logos/affari.png" alt="Affari">
+      <!-- duplicado para loop -->
+      <img src="logos/bianca.png" alt="">
+      <img src="logos/ieep.png" alt="">
+      <img src="logos/bni.png" alt="">
+      <img src="logos/otica.png" alt="">
+      <img src="logos/numberone.png" alt="">
+      <img src="logos/igui.png" alt="">
+      <img src="logos/dynamo.png" alt="">
+      <img src="logos/affari.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <h2>Pronto para turbinar seu marketing em vídeo?</h2>
+  <p>Chame no WhatsApp e vamos mostrar ao mundo o que a sua empresa tem de melhor! Temos poucas vagas disponíveis.</p>
+  <a href="https://wa.me/5532984611049" class="btn btn-primary">Falar no WhatsApp</a>
+</section>
+
+<footer>© 2025 PH Machado Mídia – Todos os direitos reservados</footer>
+
+<!-- Rolagem suave -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener('click',e=>{
+    const sec=document.querySelector(e.currentTarget.getAttribute('href'));
+    if(sec){e.preventDefault();sec.scrollIntoView({behavior:'smooth'})}
+  });
+});
+</script>
+</body>
+</html>
